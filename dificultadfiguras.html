@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/LOGO DE MEMORIZA EMPAREJA Y APRENDE.png" type="img/LOGO DE MEMORIZA EMPAREJA Y APRENDE">
+    <title>Memoriza, Empareja y Aprende!!</title>
+    <link rel="stylesheet" href="dificultadnumeros.css">
+</head>
+<header>
+    <h1>Memoriza, Empareja y Aprende!!</h1>
+    <img src="img/LOGO DE MEMORIZA EMPAREJA Y APRENDE.png" width="60px">
+</header>
+<body>
+    <div class="container">
+        <h2>Selecciona la dificultad</h2>
+        <div class="level-selection">
+            <button onclick="goToPage('figuras facil.html')">Fácil</a></button>
+            <button onclick="goToPage('figuras medio.html')">Medio</button>
+            <button onclick="goToPage('figuras dificil.html')">Difícil</button>
+        </div>
+        <div id="game-board" class="game-board"></div>
+        <div id="message" class="message"></div>
+    </div>
+    <script>
+        function goToPage(page) {
+            window.location.href = page;  // Redirige a la página seleccionada
+        }
+    </script>
+    
+    <div class="fondo"></div>
+    <div class="bubbles">
+        <div class="bubble" style="--i:0;"></div>
+        <div class="bubble" style="--i:1;"></div>
+        <div class="bubble" style="--i:2;"></div>
+        <div class="bubble" style="--i:3;"></div>
+        <div class="bubble" style="--i:4;"></div>
+        <div class="bubble" style="--i:5;"></div>
+        <div class="bubble" style="--i:6;"></div>
+        <div class="bubble" style="--i:7;"></div>
+    </div>
+
+<div class="fondo"></div>
+
+
+</body>
+</html>

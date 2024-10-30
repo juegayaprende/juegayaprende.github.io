@@ -1,0 +1,79 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+    background-color: #3bffc4; /* Color de fondo amarillo brillante */
+    overflow: hidden; /* Elimina la barra de desplazamiento */
+}
+
+.dynamic-heading {
+    font-size: 2rem; /* Tamaño de fuente más grande */
+    color: #ff4081; /* Color del texto brillante */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    animation: bounce 1s infinite; /* Animación de rebote constante */
+}
+
+a {
+    color: inherit; /* Hereda el color del texto padre */
+    text-decoration: none; /* Quita el subrayado */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+a:hover {
+    color: #ff4081; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para las burbujas */
+.bubbles {
+    position: absolute;
+    bottom: 0; /* Burbujas comienzan desde el fondo */
+    width: 100%; /* Ancho total */
+    height: 100%; /* Alto total */
+    overflow: hidden; /* Evita desbordamiento */
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px; /* Inicia fuera de la pantalla */
+    background: rgb(255, 255, 255); /* Color de burbujas */
+    border-radius: 50%; /* Hace las burbujas redondas */
+    opacity: 0.4; /* Transparencia */
+    animation: rise 8s linear infinite; /* Animación de subida */
+}
+
+.bubble:nth-child(1) { width: 60px; height: 60px; left: 10%; animation-delay: calc(var(--i) * 1s); }
+.bubble:nth-child(2) { width: 80px; height: 80px; left: 20%; animation-delay: calc(var(--i) * 1.5s); }
+.bubble:nth-child(3) { width: 40px; height: 40px; left: 30%; animation-delay: calc(var(--i) * 2s); }
+.bubble:nth-child(4) { width: 70px; height: 70px; left: 50%; animation-delay: calc(var(--i) * 2.5s); }
+.bubble:nth-child(5) { width: 50px; height: 50px; left: 60%; animation-delay: calc(var(--i) * 3s); }
+.bubble:nth-child(6) { width: 90px; height: 90px; left: 70%; animation-delay: calc(var(--i) * 3.5s); }
+.bubble:nth-child(7) { width: 30px; height: 30px; left: 80%; animation-delay: calc(var(--i) * 4s); }
+.bubble:nth-child(8) { width: 100px; height: 100px; left: 90%; animation-delay: calc(var(--i) * 4.5s); }
+.bubble:nth-child(9) { width: 55px; height: 55px; left: 40%; animation-delay: calc(var(--i) * 5s); }
+
+/* Animación de subida de burbujas */
+@keyframes rise {
+    0% {
+        transform: translateY(0); /* Comienza desde el fondo */
+    }
+    100% {
+        transform: translateY(-100vh); /* Sube hasta la parte superior */
+    }
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); /* Eleva el texto hacia arriba */
+    }
+    60% {
+        transform: translateY(-5px); /* Baja un poco */
+    }
+}

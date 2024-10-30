@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/LOGO DE MEMORIZA EMPAREJA Y APRENDE.png" type="img/LOGO DE MEMORIZA EMPAREJA Y APRENDE">
+    <title>Memoriza, Empareja y Aprende!!</title>
+    <link rel="stylesheet" href="animalesfacil.css">
+</head>
+<body>
+    <header>
+        <h1>Memoriza, Empareja y Aprende!!</h1>
+        <div class="menu-icon" id="menu-icon">☰</div>
+    </header>
+<h2>ANIMALES (FÁCIL)</h2>
+    <div class="menu-icon" id="menu-icon"></div>
+    
+
+    
+    <div class="menu" id="menu">
+        <h2>¡Selecciona tu tematica favorita!</h2>
+        <button class="nivel" data-nivel="6"><a href="dificultad.html">Animales</a></button>
+        <button class="nivel" data-nivel="8"><a href="dificultadcolores.html">Colores</a></button>
+        <button class="nivel" data-nivel="12"><a href="dificultadfiguras.html">Figuras</a></button>
+        <button class="nivel" data-nivel="12"><a href="dificultadnumeros.html">Números</a></button>
+        <button class="nivel" data-nivel="12"><a href="index.html">Volver al inicio</a></button>
+        <button id="cerrar-menu">Cerrar</button>
+    </div>
+
+    <div class="game-board">
+        <div class="card" data-pair="1">
+        <div class="front"></div>
+        <div class="back">
+        <img src="img/caballito.jpg" alt="Imagen 1">
+        </div>
+        </div>
+        <div class="card" data-pair="1">
+        <div class="front"></div>
+        <div class="back">
+        <img src="img/caballito.jpg" alt="Imagen 1">
+        </div>
+        </div>
+        <div class="card" data-pair="2">
+        <div class="front"></div>
+        <div class="back">
+        <img src="img/leonsito.jpg" alt="Imagen 2">
+        </div>
+        </div>
+        
+        <div class="card" data-pair="2">
+        <div class="front"></div>
+        <div class="back">
+        <img src="img/leonsito.jpg" alt="Imagen 2">
+        </div>   
+        </div>
+        
+        <div class="card" data-pair="3">
+        <div class="front"></div>
+        <div class="back">
+        <img src="img/koalita.png" alt="Imagen 3">
+        </div>     
+        </div>
+        <div class="card" data-pair="3">
+        <div class="front"></div>
+        <div class="back">
+        <img src="img/koalita.png" alt="Imagen 3">
+        </div>     
+        </div>
+    </div>
+    <div class="level-selection">
+    <button onclick="goToPage('animalesmedio.html')">Siguiente Nivel</button>
+</div>
+    <script>
+        function goToPage(page) {
+            window.location.href = page;  
+        }
+    </script>
+
+    
+    <div class="fondo"></div>
+    <div class="bubbles">
+        <div class="bubble" style="--i:0;"></div>
+        <div class="bubble" style="--i:1;"></div>
+        <div class="bubble" style="--i:2;"></div>
+        <div class="bubble" style="--i:3;"></div>
+        <div class="bubble" style="--i:4;"></div>
+        <div class="bubble" style="--i:5;"></div>
+        <div class="bubble" style="--i:6;"></div>
+        <div class="bubble" style="--i:7;"></div>
+    </div>
+
+    <script src="animalesfacil.js"></script>
+
+    
+</body>
+</html>

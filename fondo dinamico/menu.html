@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoriza, Empareja y Aprende!!</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+        <h1>Memoriza, Empareja y Aprende!!</h1>
+    </header>
+
+    <div class="image-container"> 
+        <img src="index.jpg" alt="index" width="800" height="400">
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav class="menu">
+        <h2>¡Selecciona tu temática favorita!</h2>
+        <button class="nivel" data-nivel="6"><a href="Facil.html">Animales</a></button>
+        <button class="nivel" data-nivel="8"><a href="Colores.html">Colores</a></button>
+        <button class="nivel" data-nivel="12"><a href="Figuras.html">Figuras</a></button>
+        <button class="nivel" data-nivel="12"><a href="Numeros.html">Números</a></button>
+    </nav>
+
+    <div class="bubbles">
+        <div class="bubble" style="--i:0;"></div>
+        <div class="bubble" style="--i:1;"></div>
+        <div class="bubble" style="--i:2;"></div>
+        <div class="bubble" style="--i:3;"></div>
+        <div class="bubble" style="--i:4;"></div>
+        <div class="bubble" style="--i:5;"></div>
+        <div class="bubble" style="--i:6;"></div>
+        <div class="bubble" style="--i:7;"></div>
+    </div>
+
+    <div class="fondo"></div>
+
+    <script src="juego.js"></script>
+</body>
+</html>
